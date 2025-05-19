@@ -1,0 +1,118 @@
+!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire Devis Peinture</title>
+  <style>
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    select, input[type="text"], input[type="number"], input[type="file"] {
+      width: 100%; margin-bottom: 10px;
+    }
+    .section { border: 1px solid #ccc; padding: 15px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Formulaire Devis Peinture</h1>
+
+  <form>
+
+    <div class="section">
+      <label for="piece">Type de pièce</label>
+      <select id="piece" name="piece">
+        <option>Salon</option>
+        <option>Cuisine</option>
+        <option>Salle de bain</option>
+        <option>Toilette</option>
+        <option>Chambre 1</option>
+        <option>Chambre 2</option>
+        <option>Chambre 3</option>
+        <option>Chambre 4</option>
+        <option>Escalier</option>
+        <option>Couloir</option>
+        <option>Entrée</option>
+        <option>Local</option>
+        <option>Autres</option>
+      </select>
+
+      <label for="surface">Surface concernée</label>
+      <select id="surface" name="surface">
+        <option>Plafond</option>
+        <option>Murs</option>
+        <option>Portes</option>
+        <option>Fenêtres</option>
+        <option>Sol</option>
+      </select>
+
+      <label for="support">Nature du support</label>
+      <select id="support" name="support">
+        <option>Béton</option>
+        <option>Placo</option>
+        <option>Bois</option>
+        <option>Métal</option>
+      </select>
+
+      <label for="revetement">Revêtement existant</label>
+      <select id="revetement" name="revetement">
+        <option>Aucun</option>
+        <option>Papier peint</option>
+        <option>Toile de verre</option>
+        <option>Gouttelettes</option>
+        <option>Crépi</option>
+        <option>Revêtement bois</option>
+        <option>Carrelage au sol</option>
+        <option>Faïence murale</option>
+        <option>Autres</option>
+      </select>
+      <label>Photo du revêtement</label>
+      <input type="file" name="photo_revetement">
+
+      <label for="preparation">Préparation souhaitée</label>
+      <select id="preparation" name="preparation">
+        <option>Aucune (garder le revêtement existant)</option>
+        <option>Retrait du revêtement existant</option>
+      </select>
+
+      <label for="finition">Finition souhaitée</label>
+      <select id="finition" name="finition">
+        <option>Pose papier peint</option>
+        <option>Pose de toile de verre</option>
+        <option>Peinture acrylique en 2 couches (avec ponçage et enduit)</option>
+        <option>Vernis (si bois)</option>
+      </select>
+
+      <label for="aspect">Aspect de peinture</label>
+      <select id="aspect" name="aspect">
+        <option>Mate</option>
+        <option>Velours</option>
+        <option>Satinée</option>
+        <option>Brillante</option>
+      </select>
+
+      <label for="couleur">Couleur souhaitée</label>
+      <input type="text" name="couleur" placeholder="ex: blanc cassé, RAL 9010">
+
+      <label for="quantite">Quantité estimée (en m²)</label>
+      <input type="number" name="quantite" min="0">
+
+      <label for="photo_element">Photo de l'élément</label>
+      <input type="file" name="photo_element">
+
+      <label for="fourniture">Fourniture à la charge du client ?</label>
+      <select name="fourniture">
+        <option>Oui</option>
+        <option>Non</option>
+      </select>
+
+      <label for="meubles">Présence de meubles à protéger ?</label>
+      <select name="meubles">
+        <option>Oui, protection par l'entreprise</option>
+        <option>Oui, protection par le client</option>
+        <option>Non</option>
+      </select>
+    </div>
+
+    <button type="submit">Envoyer le devis</button>
+  </form>
+
+</body>
+</html>
